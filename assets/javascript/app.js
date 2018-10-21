@@ -99,9 +99,6 @@ triviaGame = {
     setTimeout(this.newQuestionCheck, 1000 * 8);
   },
   cleanUp: function() {
-    /*     $("#questionGoesHere").empty();
-    $("#countDownGoesHere").empty();
-    $(".explaination").empty(); */
     $("#row1").empty();
     $("#row2").empty();
     $("#row3").empty();
@@ -157,12 +154,16 @@ triviaGame = {
     b.appendTo($("#questionGoesHere"));
     //Pulling Question from obj
 
+    //shuffle answer everytime
+    var shuffleList = shuffle(list[triviaGame.questionToGet].answer);
+    //shuffle answer everytime
+
     //Pulling Answers from obj
     for (i = 0; i < 4; i++) {
-      var b = $("<button>").text(list[triviaGame.questionToGet].answer[i]);
+      var b = $("<button>").text(shuffleList[i]);
       b.addClass("answerBtn btn btn-outline-dark btn-lg btn-block");
       b.attr("data-check", list[triviaGame.questionToGet].result);
-      b.attr("data-carry", list[triviaGame.questionToGet].answer[i]);
+      b.attr("data-carry", shuffleList[i]);
       b.appendTo($("#row1"));
     }
     //Pulling Answers from obj
