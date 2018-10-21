@@ -1,0 +1,56 @@
+.container-fluid {
+    background-image: url("../images/pirates-caribbean-wallpapers-hd-72485-4200786.png");
+    background-size: auto;
+    background-repeat: repeat;
+    height: 938px;
+}
+
+.answerBtn {
+    font-size: 30px;
+
+    white-space: normal;
+    color: black;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.answerBtn:hover {
+    color: white;
+}
+
+.questionBtn {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+@font-face {
+	font-family: 'bones';
+	src: url('../fonts/bones.ttf'); 
+}
+
+h1 {
+    font-family: 'Charmonman', cursive;
+    font-size: 120px;
+}
+
+h3 {
+    font-family: 'Kaushan Script', cursive;
+font-size: 30px;
+}
+#text1 {
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.explaination {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 30px;
+
+}
+
+.resultText {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+
+}
