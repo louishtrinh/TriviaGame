@@ -62,7 +62,7 @@ triviaGame = {
         "</h2>"
     );
     triviaGame.questionToGet++;
-    setTimeout(this.newQuestionCheck, 1000 * 1);
+    setTimeout(this.newQuestionCheck, 1000 * 8);
   },
   loseRound: function() {
     triviaGame.wrong++;
@@ -79,7 +79,7 @@ triviaGame = {
         "</h2>"
     );
     triviaGame.questionToGet++;
-    setTimeout(this.newQuestionCheck, 1000 * 1);
+    setTimeout(this.newQuestionCheck, 1000 * 8);
   },
   winRound: function() {
     triviaGame.right++;
@@ -96,7 +96,7 @@ triviaGame = {
         "</h2>"
     );
     triviaGame.questionToGet++;
-    setTimeout(this.newQuestionCheck, 1000 * 1);
+    setTimeout(this.newQuestionCheck, 1000 * 8);
   },
   cleanUp: function() {
     /*     $("#questionGoesHere").empty();
