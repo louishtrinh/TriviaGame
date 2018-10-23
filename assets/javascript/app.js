@@ -9,7 +9,7 @@ triviaGame = {
   gameFinish: false,
   quizList: [
     {
-      question: "What was Barbosa greatest treasure?",
+      question: "What was Barbossa greatest treasure?",
       answer: [
         "The Gold of Aztec",
         "The Black Pearl, the fastest ship there ever was",
@@ -18,7 +18,31 @@ triviaGame = {
       ],
       result: "Corona, his long lost daughter",
       explain:
-        "Corona: What am I to you? --- Barbosa: My treasure --- was Barbosa's last word right before letting go of the anchor thus killing himself but ensure his daughter safety"
+        "Corona: What am I to you? --- Barbossa: My treasure --- was Barbossa's last word right before letting go of the anchor thus killing himself but ensure his daughter safety"
+    },
+    {
+      question: "When the pirate attack Port Royal, how did Elizabeth Swann convince the pirates to spare her life and take her to captain Barbossa?",
+      answer: [
+        "She beat them in a swordfight",
+        "She threatened them with a gun",
+        "She invoked the right of parley",
+        "She offered them gold"
+      ],
+      result: "She invoked the right of parley",
+      explain:
+        "Tho Elizabeth Swann is later on known as a Pirate Lord of the China Sea, her journey started at Port Royal when she was merely a damsel in distress with nothing but her wit and her intelligence."
+    },
+    {
+      question: "What was the curse of the Aztec gold?",
+      answer: [
+        "Die of a painful death",
+        "Being chased like dog and cat, day and night by an army of death",
+        "Granting immortality",
+        "Kill all ye love ones"
+      ],
+      result: "Granting immortality",
+      explain:
+        "Being immortal yet lost all the senses, food turns to ashes, fine wine and rum wash taste like plain water, the flesh and the women bring no pleasure."
     },
 
     {
@@ -69,12 +93,13 @@ triviaGame = {
     $(".answerBtn").remove();
     clearInterval(intervalId);
     $("#row1").html(
-      "<h2 class='explaination' style='color:black;'>" +
+      "<h2 class='explaination'  style='color:black;'>" +
         "Filthy pirate, to Davy Jones’ Locker with ye" +
         "</h2>"
     );
+
     $("#row2").html(
-      "<h2 class='explaination; style='color:black;'>" +
+      "<h2 class='explaination'; style='color:black;'>" +
         list[triviaGame.questionToGet].explain +
         "</h2>"
     );
